@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <title>Weather</title>
+    </head>
+<body>
+    <div class="weather">
+        <div class="weather__inner">
+          <div id="root1">
+          </div>
+
+            <div class="right">
+                <div class="header_2">
+                    <img class="fahrenheit" src="./img/f.png" />
+                    <img class="celsius" src="./img/c.png" />
+                </div>
+                <div class="forecast">
+
+                    <div class="forecast_item">
+                       <div class="forecast_time">Tomorrow</div>
+                       <img class="forecast_icon" src="./img/cloud.png" />
+                       <div class="forecast_temp">15°</div>
+                    </div>
+
+                    <div class="forecast_item">
+                       <div class="forecast_time">Sun, 8 June</div>
+                       <img class="forecast_icon" src="./img/cloud_snow.png" />
+                       <div class="forecast_temp">15°</div>
+                    </div>
+
+                    <div class="forecast_item">
+                       <div class="forecast_time">Mon, 9 June</div>
+                       <img class="forecast_icon" src="./img/snow.png" />
+                       <div class="forecast_temp">15°</div>
+                    </div>
+
+                    <div class="forecast_item">
+                       <div class="forecast_time">Tue, 10 June</div>
+                       <img class="forecast_icon" src="./img/cloud_sun.png" />
+                       <div class="forecast_temp">15°</div>
+                    </div>
+
+                    <div class="forecast_item">
+                       <div class="forecast_time">Fir, 11 June</div>
+                       <img class="forecast_icon" src="./img/fog.png" />
+                       <div class="forecast_temp">15°</div>
+                    </div>
+                </div>
+
+                <div class="right_title">Todays Hightlights</div>
+
+                <div id="root2">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="choosing_city" id="choose">
+          <form action="" class="form" id="form">
+            <div class="form_group">
+              <input
+                type="text"
+                value=""
+                name="city"
+                class="form_input"
+                id="text_input"
+                placeholder="search location"
+              />
+              <input
+                type="submit"
+                class="form_submit"
+                id="submit_button"
+                value="Search"
+              />
+            </div>
+          </form>
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
